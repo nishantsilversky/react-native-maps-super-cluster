@@ -132,7 +132,6 @@ export default class ClusteredMapView extends PureComponent {
         {...props}
         style={style}
         ref={this.mapRef}
-        onRegionChangeComplete={this.onRegionChangeComplete}>
         {
           this.props.clusteringEnabled && this.state.data.map((d) => {
             if (d.properties.point_count === 0)
